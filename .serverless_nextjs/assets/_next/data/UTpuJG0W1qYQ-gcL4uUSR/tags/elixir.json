@@ -1,0 +1,15 @@
+{
+  "pageProps": {
+    "posts": [
+      {
+        "title": "Setting up Erlang and Elixir from precompiled binaries.",
+        "date": "2016-04-14",
+        "tags": ["elixir"],
+        "summary": "Skip the build step, and jump straight into development.",
+        "slug": "2016-04-14-setting-up-erlang-and-elixir-from-precompiled-binaries"
+      }
+    ],
+    "tag": "elixir"
+  },
+  "__N_SSG": true
+}

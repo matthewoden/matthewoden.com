@@ -1,0 +1,45 @@
+{
+  "pageProps": {
+    "posts": [
+      {
+        "title": "Converting from K3s to Docker Swarm",
+        "date": "2021-02-14",
+        "tags": ["devops", "docker"],
+        "draft": false,
+        "summary": "Sometimes, it's nice to scale down the homelab to something a little simpler.",
+        "slug": "2021-02-14-converting-from-k3s-to-docker-swarm"
+      },
+      {
+        "title": "Setting up SSL for a single-instance deploy on Elastic Beanstalk, with Docker",
+        "date": "2017-09-04",
+        "tags": ["devops", "docker"],
+        "draft": false,
+        "summary": "A step by step guide to have https on your personal projects.",
+        "slug": "2017-09-04-single-node-ssl-aws-elastic-beanstalk"
+      },
+      {
+        "title": "Node isn't where you do work.",
+        "date": "2017-09-02",
+        "summary": "Push work to other systems, and let node coordinate your flow.",
+        "tags": ["node", "architecture"],
+        "slug": "2017-09-02-the-golden-rule-of-node-never-do-work"
+      },
+      {
+        "title": "Common problems when using NPM Enterprise.",
+        "date": "2017-08-15",
+        "tags": ["node", "config"],
+        "summary": "A better developer experience when using private registries",
+        "draft": false,
+        "slug": "2017-08-15-common-problems-with-npm-enterprise"
+      },
+      {
+        "title": "Setting up Erlang and Elixir from precompiled binaries.",
+        "date": "2016-04-14",
+        "tags": ["elixir"],
+        "summary": "Skip the build step, and jump straight into development.",
+        "slug": "2016-04-14-setting-up-erlang-and-elixir-from-precompiled-binaries"
+      }
+    ]
+  },
+  "__N_SSG": true
+}

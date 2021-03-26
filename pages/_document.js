@@ -8,17 +8,16 @@ class MyDocument extends Document {
           <link
             rel="icon"
             type="image/png"
-            sizes="32x32"
-            href="/static/favicons/favicon-32x32.png"
+            sizes="192x192"
+            href="/static/favicons/favicon-192x192.png"
           />
           <link
             rel="icon"
             type="image/png"
-            sizes="16x16"
-            href="/static/favicons/favicon-16x16.png"
+            sizes="512x512"
+            href="/static/favicons/favicon-512x512.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/index.xml" />
@@ -75,7 +74,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
+        <body className="antialiased bg-gray-900 text-white">
           <Main />
           <NextScript />
         </body>

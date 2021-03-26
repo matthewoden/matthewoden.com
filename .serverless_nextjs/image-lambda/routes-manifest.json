@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "pages404": true,
+  "basePath": "",
+  "redirects": [],
+  "rewrites": [],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/notes/[slug]",
+      "regex": "^/notes/([^/]+?)(?:/)?$",
+      "routeKeys": { "slug": "slug" },
+      "namedRegex": "^/notes/(?<slug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/tags/[tag]",
+      "regex": "^/tags/([^/]+?)(?:/)?$",
+      "routeKeys": { "tag": "tag" },
+      "namedRegex": "^/tags/(?<tag>[^/]+?)(?:/)?$"
+    }
+  ],
+  "dataRoutes": [
+    { "page": "/", "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/index.json$" },
+    { "page": "/notes", "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/notes.json$" },
+    {
+      "page": "/notes/[slug]",
+      "routeKeys": { "slug": "slug" },
+      "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/notes/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/notes/(?<slug>[^/]+?)\\.json$"
+    },
+    { "page": "/tags", "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/tags.json$" },
+    {
+      "page": "/tags/[tag]",
+      "routeKeys": { "tag": "tag" },
+      "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/tags/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/tags/(?<tag>[^/]+?)\\.json$"
+    }
+  ]
+}

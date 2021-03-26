@@ -1,0 +1,139 @@
+{
+  "buildId": "UTpuJG0W1qYQ-gcL4uUSR",
+  "logLambdaExecutionTimes": false,
+  "pages": {
+    "ssr": {
+      "dynamic": {
+        "/notes/:slug": {
+          "file": "pages/notes/[slug].js",
+          "regex": "^\\/notes(?:\\/([^\\/#\\?]+?))[\\/#\\?]?$"
+        },
+        "/tags/:tag": {
+          "file": "pages/tags/[tag].js",
+          "regex": "^\\/tags(?:\\/([^\\/#\\?]+?))[\\/#\\?]?$"
+        }
+      },
+      "nonDynamic": {
+        "/": "pages/index.js",
+        "/notes": "pages/notes.js",
+        "/tags": "pages/tags.js",
+        "/_error": "pages/_error.js"
+      }
+    },
+    "html": {
+      "dynamic": {},
+      "nonDynamic": { "/404": "pages/404.html", "/about": "pages/about.html" }
+    },
+    "ssg": {
+      "dynamic": {
+        "/notes/[slug]": {
+          "routeRegex": "^/notes/([^/]+?)(?:/)?$",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/[slug].json",
+          "fallback": false,
+          "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/notes/([^/]+?)\\.json$"
+        },
+        "/tags/[tag]": {
+          "routeRegex": "^/tags/([^/]+?)(?:/)?$",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/[tag].json",
+          "fallback": false,
+          "dataRouteRegex": "^/_next/data/UTpuJG0W1qYQ\\-gcL4uUSR/tags/([^/]+?)\\.json$"
+        }
+      },
+      "nonDynamic": {
+        "/tags": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": null,
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags.json"
+        },
+        "/": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": null,
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/index.json"
+        },
+        "/notes/2016-04-14-setting-up-erlang-and-elixir-from-precompiled-binaries": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/notes/[slug]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/2016-04-14-setting-up-erlang-and-elixir-from-precompiled-binaries.json"
+        },
+        "/notes/2017-08-15-common-problems-with-npm-enterprise": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/notes/[slug]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/2017-08-15-common-problems-with-npm-enterprise.json"
+        },
+        "/notes/2017-09-02-the-golden-rule-of-node-never-do-work": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/notes/[slug]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/2017-09-02-the-golden-rule-of-node-never-do-work.json"
+        },
+        "/notes/2017-09-04-single-node-ssl-aws-elastic-beanstalk": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/notes/[slug]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/2017-09-04-single-node-ssl-aws-elastic-beanstalk.json"
+        },
+        "/notes/2021-02-14-converting-from-k3s-to-docker-swarm": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/notes/[slug]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes/2021-02-14-converting-from-k3s-to-docker-swarm.json"
+        },
+        "/notes": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": null,
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/notes.json"
+        },
+        "/tags/elixir": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/elixir.json"
+        },
+        "/tags/node": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/node.json"
+        },
+        "/tags/config": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/config.json"
+        },
+        "/tags/architecture": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/architecture.json"
+        },
+        "/tags/devops": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/devops.json"
+        },
+        "/tags/docker": {
+          "initialRevalidateSeconds": false,
+          "srcRoute": "/tags/[tag]",
+          "dataRoute": "/_next/data/UTpuJG0W1qYQ-gcL4uUSR/tags/docker.json"
+        }
+      }
+    }
+  },
+  "publicFiles": {
+    "/.DS_Store": ".DS_Store",
+    "/index.xml": "index.xml",
+    "/sitemap.xml": "sitemap.xml",
+    "/static/.DS_Store": "static/.DS_Store",
+    "/static/favicons/android-chrome-192x192.png": "static/favicons/android-chrome-192x192.png",
+    "/static/favicons/android-chrome-512x512.png": "static/favicons/android-chrome-512x512.png",
+    "/static/favicons/apple-touch-icon.png": "static/favicons/apple-touch-icon.png",
+    "/static/favicons/favicon-16x16.png": "static/favicons/favicon-16x16.png",
+    "/static/favicons/favicon-32x32.png": "static/favicons/favicon-32x32.png",
+    "/static/favicons/favicon.ico": "static/favicons/favicon.ico",
+    "/static/favicons/site.webmanifest": "static/favicons/site.webmanifest",
+    "/static/images/face.png": "static/images/face.png",
+    "/tags/architecture/index.xml": "tags/architecture/index.xml",
+    "/tags/config/index.xml": "tags/config/index.xml",
+    "/tags/devops/index.xml": "tags/devops/index.xml",
+    "/tags/docker/index.xml": "tags/docker/index.xml",
+    "/tags/elixir/index.xml": "tags/elixir/index.xml",
+    "/tags/node/index.xml": "tags/node/index.xml"
+  },
+  "trailingSlash": false,
+  "domainRedirects": {},
+  "enableHTTPCompression": false
+}

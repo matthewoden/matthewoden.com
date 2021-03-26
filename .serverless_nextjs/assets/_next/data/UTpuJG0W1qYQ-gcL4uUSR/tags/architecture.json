@@ -1,0 +1,15 @@
+{
+  "pageProps": {
+    "posts": [
+      {
+        "title": "Node isn't where you do work.",
+        "date": "2017-09-02",
+        "summary": "Push work to other systems, and let node coordinate your flow.",
+        "tags": ["node", "architecture"],
+        "slug": "2017-09-02-the-golden-rule-of-node-never-do-work"
+      }
+    ],
+    "tag": "architecture"
+  },
+  "__N_SSG": true
+}
