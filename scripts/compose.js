@@ -26,6 +26,6 @@ images: []
 ---
 `
 
-fs.writeFile(`data/notes/${fileName}.${ext}`, frontMatter, (err) => {
+fs.writeFile(`data/notes/${date}-${fileName}.${ext}`, frontMatter, (err) => {
   if (err) throw err
 })
