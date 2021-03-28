@@ -1,7 +1,7 @@
 ---
 title: Post-Processing Gmail
 date: '2021-02-14'
-tags: ['devops', 'docker']
+tags: ['productivity', 'gmail', 'automation']
 draft: true
 summary: Automate your way to inbox-zero with google apps-scripts
 ---
@@ -27,7 +27,3 @@ An Open Source, Cross-platform Text Expander written in Rust.
 
 Matthew Potter 8:22 PM
 One of the things I immediately installed was the one that fixes the most commonly misspelled words, because I no word good
-
-```
-
-```

@@ -17,3 +17,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.prose blockquote {
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:first-of-type::after {
+  content: '';
+}

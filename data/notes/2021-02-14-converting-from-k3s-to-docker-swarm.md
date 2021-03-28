@@ -1,52 +1,35 @@
 ---
-title: Converting from K3s to Docker Swarm
+title: Converting from Kubernetes to Docker Swarm
 date: '2021-02-14'
-tags: ['devops', 'docker']
+tags: ['devops', 'homelab', 'kubernetes']
 draft: false
 summary: Sometimes, it's nice to scale down the homelab to something a little simpler.
 ---
 
-After an irrecoverable k3s failure on my pi cluster, I've chosen to simplify
-to a basic docker swarm cluster today. I learned what I wanted - and the level of
-debugging required to sort out why my servers wouldn’t come up was a little too
+After an irrecoverable k3s failure on my pi cluster, I've chosen to simplify my
+homelab to a basic docker swarm cluster today. I learned what I wanted - and the
+level of debugging required to sort out why my servers wouldn’t come up was a little too
 much like my day job, and not enough of an experimental sandbox.
 
-You just don't need 7 containers to orchestrate a deployments to a pi cluster.
+I just don't need 7 containers to orchestrate a deployments to a pi cluster.
 
 ## Tearing down k3s from k3sup
 
-As automated as the`k3sup` tool is, teardown is a process left to be discovered.
+As automated as the`k3sup` tool is for setting up clusters, they didn't bother
+to automate any teardown and cleanup. Fortunately, k3s includes scripts for these
+as part of the install.
 
-There's two scripts - one on master, and one for agents It's
-To tear down kubernetes, `k3sup` comes with a few built in scripts.cripts. They're
-
-On master
-
-/usr/local/bin/k3s-uninstall.sh
+On the server node, you can run the following script:
 
 ```bash
 /usr/local/bin/k3s-uninstall.sh
-
-``
-January 12th
-
-I know there's not a lot of mac folks in here (actually, are there any besides me?) but screenotate.com is a wonderful tool. Not free - but having OCR on all your screenshots, so you have searchable, annotated results? Super nice.
-
-Especially with the number of video calls/meetings I have - I've been screencapping when folks share their screen so I can grab a url, or text off a slide or whatever's being shared without interrupting anyone.
-
-Janyart 26th
-
-Started using Bear for notes, and I'm a big, big fan. I love the hybrid markdown approach, where it keeps the markdown syntax, but also applies the formatting. e.g. _Some bold text_ and /some italic text/
-
-Also, little things like tagging, instead of folders. And any note that uses checkboxes (that aren't all checked) showing up in a "TODO" section. Like many of the tools I use, it's mac only.
-
-January 27th
-https://espanso.org/
-
-espanso
-Home
-An Open Source, Cross-platform Text Expander written in Rust.
-
-Matthew Potter 8:22 PM
-One of the things I immediately installed was the one that fixes the most commonly misspelled words, because I no word good
 ```
+
+And on your agents nodes, the script name is slightly different:
+
+```bash
+/usr/local/bin/k3s-agent-uninstall.sh
+```
+
+And that's it! Kubernetes has been cleaned up, and your servers are ready for
+whatever's next.
