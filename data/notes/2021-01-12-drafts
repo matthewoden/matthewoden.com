@@ -1,33 +1,11 @@
 ---
-title: Converting from K3s to Docker Swarm
+title: Post-Processing Gmail
 date: '2021-02-14'
 tags: ['devops', 'docker']
-draft: false
-summary: Sometimes, it's nice to scale down the homelab to something a little simpler.
+draft: true
+summary: Automate your way to inbox-zero with google apps-scripts
 ---
 
-After an irrecoverable k3s failure on my pi cluster, I've chosen to simplify
-to a basic docker swarm cluster today. I learned what I wanted - and the level of
-debugging required to sort out why my servers wouldn’t come up was a little too
-much like my day job, and not enough of an experimental sandbox.
-
-You just don't need 7 containers to orchestrate a deployments to a pi cluster.
-
-## Tearing down k3s from k3sup
-
-As automated as the`k3sup` tool is, teardown is a process left to be discovered.
-
-There's two scripts - one on master, and one for agents It's
-To tear down kubernetes, `k3sup` comes with a few built in scripts.cripts. They're
-
-On master
-
-/usr/local/bin/k3s-uninstall.sh
-
-```bash
-/usr/local/bin/k3s-uninstall.sh
-
-``
 January 12th
 
 I know there's not a lot of mac folks in here (actually, are there any besides me?) but screenotate.com is a wonderful tool. Not free - but having OCR on all your screenshots, so you have searchable, annotated results? Super nice.

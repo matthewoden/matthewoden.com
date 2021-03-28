@@ -80,7 +80,7 @@ export default function Home({ posts }) {
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
-          <Link href="/blog" className="text-red-500 hover:text-blue-400" aria-label="all posts">
+          <Link href="/blog" className="text-blue-500 hover:text-blue-400" aria-label="all posts">
             All Posts &rarr;
           </Link>
         </div>

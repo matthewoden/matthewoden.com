@@ -43,7 +43,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <dl className="pt-6 pb-10 xl:pt-11 xl:border-b  xl:border-gray-700">
-              <dt className="sr-only">Authors</dt>
+              <dt className="sr-only">Author</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
@@ -67,7 +67,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose prose-dark max-w-none">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 text-gray-300">
+              <div className="pt-6 pb-6 text-sm text-blue-500 hover:text-blue-400">
                 <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
