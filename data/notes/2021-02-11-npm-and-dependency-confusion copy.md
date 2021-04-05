@@ -3,7 +3,7 @@ title: NPM and Dependency Confusion
 date: '2021-02-11'
 tags: ['npm', 'security']
 draft: false
-summary: A little policy to ensure that your teams are kept safe and sound.
+summary: Do you manage a private registry? Here's a policy to keep your apps safe from Dependency Confusion.
 ---
 
 You may have recently read about the exploits around [dependency confusion](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610).

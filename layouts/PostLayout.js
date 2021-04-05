@@ -13,6 +13,29 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
+const Author = () => (
+  <dl className="pt-6 pb-10 xl:pt-11 xl:border-b  xl:border-gray-700">
+    <dt className="sr-only">Author</dt>
+    <dd>
+      <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
+        <li className="flex items-center space-x-2">
+          <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
+          <dl className="text-sm font-medium leading-5 whitespace-nowrap">
+            <dt className="sr-only">Name</dt>
+            <dd className="text-gray-100">{siteMetdata.author}</dd>
+            <dt className="sr-only">Twitter</dt>
+            <dd>
+              <Link href={siteMetdata.twitter} className="text-blue-500 hover:text-blue-400">
+                {siteMetdata.twitter.replace('https://twitter.com/', '@')}
+              </Link>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </dd>
+  </dl>
+)
+
 export default function PostLayout({ children, frontMatter, next, prev }) {
   const { slug, fileName, date, title, tags } = frontMatter
 
@@ -42,37 +65,23 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             className="pb-8 divide-y xl:divide-y-0 divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:pt-11 xl:border-b  xl:border-gray-700">
-              <dt className="sr-only">Author</dt>
-              <dd>
-                <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
-                  <li className="flex items-center space-x-2">
-                    <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
-                    <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                      <dt className="sr-only">Name</dt>
-                      <dd className="text-gray-100">{siteMetdata.author}</dd>
-                      <dt className="sr-only">Twitter</dt>
-                      <dd>
-                        <Link
-                          href={siteMetdata.twitter}
-                          className="text-blue-500 hover:text-blue-400"
-                        >
-                          {siteMetdata.twitter.replace('https://twitter.com/', '@')}
-                        </Link>
-                      </dd>
-                    </dl>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
+            <Author />
+
             <div className="divide-y divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose prose-dark max-w-none">{children}</div>
+
               <div className="pt-6 pb-6 text-sm text-blue-500 hover:text-blue-400">
-                <Link href={discussUrl(slug)} rel="nofollow">
+                <Link
+                  href={discussUrl(slug)}
+                  rel="nofollow"
+                  class="text-blue-500 hover:text-blue-400"
+                >
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={editUrl(fileName)} class="text-blue-500 hover:text-blue-400">
+                  {'View on GitHub'}
+                </Link>
               </div>
             </div>
             <footer>

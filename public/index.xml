@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>heymatthewoden@gmail.com (Matthew Oden Potter)</managingEditor>
       <webMaster>heymatthewoden@gmail.com (Matthew Oden Potter)</webMaster>
-      <lastBuildDate>Sun, 14 Feb 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 28 Mar 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://matthewoden.com/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://matthewoden.com/notes/2021-03-28-screenotate-for-better-screenshots</guid>
+    <title>My Toolset for Working Remotely.</title>
+    <link>https://matthewoden.com/notes/2021-03-28-screenotate-for-better-screenshots</link>
+    <description>Working for a traditionally non-remote org often means you're the one who needs to bring change to the table.</description>
+    <pubDate>Sun, 28 Mar 2021 00:00:00 GMT</pubDate>
+    <author>heymatthewoden@gmail.com (Matthew Oden Potter)</author>
+    <category>productivity</category>
+  </item>
+
   <item>
     <guid>https://matthewoden.com/notes/2021-01-8-gmail-auto-archiver-with-google-scripts</guid>
     <title>Post-Processing Gmail</title>
@@ -22,12 +32,12 @@
 
   <item>
     <guid>https://matthewoden.com/notes/2021-02-14-converting-from-k3s-to-docker-swarm</guid>
-    <title>Converting from K3s to Docker Swarm</title>
+    <title>Converting from Kubernetes to Docker Swarm</title>
     <link>https://matthewoden.com/notes/2021-02-14-converting-from-k3s-to-docker-swarm</link>
     <description>Sometimes, it's nice to scale down the homelab to something a little simpler.</description>
     <pubDate>Sun, 14 Feb 2021 00:00:00 GMT</pubDate>
     <author>heymatthewoden@gmail.com (Matthew Oden Potter)</author>
-    <category>devops</category><category>docker</category>
+    <category>devops</category><category>homelab</category><category>kubernetes</category>
   </item>
 
   <item>
